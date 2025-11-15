@@ -23,42 +23,29 @@
         <!-- HEADER -->
         <header class="header">
             <div class="nav-inner">
-                <div class="logo">
-                    <img src="Imagenes/logo.png" alt="Logo Dr. Jorge Ibarra" />
-                    <div class="text">
-                        <div>Dr. Jorge Ibarra</div>
-                        <div style="font-size:12px;">Clínica Médica Estética</div>
-                    </div>
-                </div>
-           <nav class="main-nav">
-    <!-- 1. Inicio: La parte superior de la página -->
-    <asp:HyperLink ID="lnkInicio" runat="server" CssClass="menu-link" NavigateUrl="#hero">Inicio</asp:HyperLink>
 
-    <!-- 2. Sobre Nosotros: La siguiente sección en la página -->
-    <asp:HyperLink ID="lnkSobreNosotros" runat="server" CssClass="menu-link" NavigateUrl="#sobre-nosotros">Sobre Nosotros</asp:HyperLink>
-
-    <!-- 3. Qué nos hace Diferentes: Valor único de la clínica -->
-    <asp:HyperLink ID="lnkDiferentes" runat="server" CssClass="menu-link" NavigateUrl="#diferentes">Qué nos hace Diferentes</asp:HyperLink>
-
-    <!-- 4. Servicios: Una de las secciones principales -->
-    <asp:HyperLink ID="lnkServicios" runat="server" CssClass="menu-link" NavigateUrl="#servicios">Servicios</asp:HyperLink>
-
-    <!-- 5. Equipos: Relacionado con los servicios -->
-    <asp:HyperLink ID="lnkEquipos" runat="server" CssClass="menu-link" NavigateUrl="#equipos">Equipos</asp:HyperLink>
-
-    <!-- 6. Catálogo: El detalle de los servicios -->
-    <asp:HyperLink ID="lnkCatalogo" runat="server" CssClass="menu-link" NavigateUrl="#catalogo">Catálogo</asp:HyperLink>
-
-    <!-- 7. Misión y Visión: Sobre la clínica -->
-    <asp:HyperLink ID="lnkMisionVision" runat="server" CssClass="menu-link" NavigateUrl="#mision-vision">Misión y Visión</asp:HyperLink>
-
-    <!-- 8. Redes Sociales: Conecta con la clínica -->
-    <asp:HyperLink ID="lnkRedes" runat="server" CssClass="menu-link" NavigateUrl="#redes-sociales">Redes Sociales</asp:HyperLink>
-
-    <!-- 9. Agendar Cita: Llamada a la acción final -->
-    <asp:HyperLink ID="lnkAgendar" runat="server" CssClass="menu-link" NavigateUrl="#agendar-cita">Agendar Cita</asp:HyperLink>
-</nav>
+              <div class="logo">
+                       <img src="Imagenes/logo.png" alt="Logo Dr. Jorge Ibarra" />
+                     <div class="text">
+                       <div>Dr. Jorge Ibarra</div>
+                       <div style="font-size:12px;">Clínica Médica Estética</div>
+                     </div>
+              </div>
             </div>
+           <nav class="main-nav">
+  <ul class="menu-items" id="menu">
+    <li><asp:HyperLink ID="lnkInicio" runat="server" CssClass="menu-link" NavigateUrl="#hero">Inicio</asp:HyperLink></li>
+    <li><asp:HyperLink ID="lnkSobreNosotros" runat="server" CssClass="menu-link" NavigateUrl="#sobre-nosotros">Sobre Nosotros</asp:HyperLink></li>
+    <li><asp:HyperLink ID="lnkDiferentes" runat="server" CssClass="menu-link" NavigateUrl="#diferentes">Qué nos hace Diferentes</asp:HyperLink></li>
+    <li><asp:HyperLink ID="lnkServicios" runat="server" CssClass="menu-link" NavigateUrl="#servicios">Servicios</asp:HyperLink></li>
+    <li><asp:HyperLink ID="lnkEquipos" runat="server" CssClass="menu-link" NavigateUrl="#equipos">Equipos</asp:HyperLink></li>
+    <li><asp:HyperLink ID="lnkCatalogo" runat="server" CssClass="menu-link" NavigateUrl="#catalogo">Catálogo</asp:HyperLink></li>
+    <li><asp:HyperLink ID="lnkMisionVision" runat="server" CssClass="menu-link" NavigateUrl="#mision-vision">Misión y Visión</asp:HyperLink></li>
+    <li><asp:HyperLink ID="lnkRedes" runat="server" CssClass="menu-link" NavigateUrl="#redes-sociales">Redes Sociales</asp:HyperLink></li>
+    <li><asp:HyperLink ID="lnkAgendar" runat="server" CssClass="menu-link" NavigateUrl="#agendar-cita">Agendar Cita</asp:HyperLink></li>
+  </ul>
+</nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         </header>
 
    <section id="hero" class="hero">
@@ -1149,6 +1136,13 @@
             // Desplazarse a la sección del catálogo
             document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' });
         }
+
+        function toggleMenu() {
+          const menu = document.getElementById('menu');
+          menu.classList.toggle('show');
+        }
+
+
     </script>
 </body>
 </html>
