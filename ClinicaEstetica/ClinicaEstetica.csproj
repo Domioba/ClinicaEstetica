@@ -76,6 +76,7 @@
     <Content Include="Formularios\Imagenes\bioestimuladores_colageno.jpg" />
     <Content Include="Formularios\Imagenes\dermapen-a7.jpg" />
     <Content Include="Formularios\Imagenes\diodo-laser.jpg" />
+    <Content Include="Formularios\Imagenes\favicon.png" />
     <Content Include="Formularios\Imagenes\hydrafacial.jpg" />
     <Content Include="Formularios\Imagenes\atencion.png" />
     <Content Include="Formularios\Imagenes\candles.png" />
@@ -92,6 +93,7 @@
     <Content Include="Formularios\Imagenes\limpieza_facial.jpg" />
     <Content Include="Formularios\Imagenes\lipo_enzimas.jpg" />
     <Content Include="Formularios\Imagenes\lipo_enzimas.png" />
+    <Content Include="Formularios\Imagenes\logo-instagram.png" />
     <Content Include="Formularios\Imagenes\logo.png" />
     <Content Include="Formularios\Imagenes\mesoterapia_capilar.jpg" />
     <Content Include="Formularios\Imagenes\microdermoabrasion.jpg" />
