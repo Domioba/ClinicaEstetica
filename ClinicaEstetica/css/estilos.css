@@ -9,7 +9,6 @@
     --instagram: #E4405F;
     --facebook: #1877F2;
 }
-
 /* =========================
    Reset y global
 ========================= */
@@ -41,12 +40,13 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: radial-gradient(circle at 20% 30%, var(--bg-pattern) 0%, transparent 50%), radial-gradient(circle at 80% 70%, var(--bg-accent-pattern) 0%, transparent 50%), radial-gradient(circle at 40% 80%, var(--bg-pattern) 0%, transparent 40%), radial-gradient(circle at 90% 20%, var(--bg-accent-pattern) 0%, transparent 45%);
+        background-image: radial-gradient(circle at 20% 30%, rgba(69, 157, 191, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(155, 184, 203, 0.12) 0%, transparent 50%), radial-gradient(circle at 40% 80%, rgba(69, 157, 191, 0.15) 0%, transparent 40%), radial-gradient(circle at 90% 20%, rgba(155, 184, 203, 0.12) 0%, transparent 45%);
         background-size: 600px 600px, 500px 500px, 550px 550px, 700px 700px;
         background-position: 0% 0%, 100% 100%, 50% 50%, 0% 100%;
         background-repeat: repeat;
         pointer-events: none;
         z-index: -1;
+        opacity: 1; /* Aseguramos máxima visibilidad */
     }
 
 a {
@@ -54,7 +54,7 @@ a {
     color: inherit;
 }
 
-/* Formas orgánicas de fondo */
+/* Formas orgánicas de fondo - MODIFICADAS */
 .organic-shape {
     position: fixed;
     border-radius: 50%;
@@ -63,40 +63,40 @@ a {
 }
 
 .shape-1 {
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(69, 157, 191, 0.1) 0%, rgba(69, 157, 191, 0.02) 70%, transparent 100%);
+    width: 600px; /* Aumentado de 500px */
+    height: 600px; /* Aumentado de 500px */
+    background: radial-gradient(circle, rgba(69, 157, 191, 0.25) 0%, rgba(69, 157, 191, 0.08) 70%, transparent 100%); /* Opacidad aumentada */
     top: -150px;
     right: -150px;
-    filter: blur(60px);
+    filter: blur(50px); /* Reducido de 60px para mayor definición */
 }
 
 .shape-2 {
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(155, 184, 203, 0.08) 0%, rgba(155, 184, 203, 0.02) 70%, transparent 100%);
+    width: 450px; /* Aumentado de 400px */
+    height: 450px; /* Aumentado de 400px */
+    background: radial-gradient(circle, rgba(155, 184, 203, 0.2) 0%, rgba(155, 184, 203, 0.08) 70%, transparent 100%); /* Opacidad aumentada */
     bottom: -100px;
     left: -100px;
-    filter: blur(50px);
+    filter: blur(40px); /* Reducido de 50px para mayor definición */
 }
 
 .shape-3 {
-    width: 350px;
-    height: 350px;
-    background: radial-gradient(circle, rgba(69, 157, 191, 0.06) 0%, rgba(69, 157, 191, 0.01) 70%, transparent 100%);
+    width: 400px; /* Aumentado de 350px */
+    height: 400px; /* Aumentado de 350px */
+    background: radial-gradient(circle, rgba(69, 157, 191, 0.18) 0%, rgba(69, 157, 191, 0.05) 70%, transparent 100%); /* Opacidad aumentada */
     top: 40%;
     left: 5%;
-    filter: blur(40px);
+    filter: blur(30px); /* Reducido de 40px para mayor definición */
 }
 
-/* Patrón de puntos y líneas */
+/* Patrón de puntos y líneas - MODIFICADO */
 .medical-dots {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(var(--color-accent) 1.5px, transparent 1.5px);
+    background-image: radial-gradient(var(--color-accent) 2px, transparent 2px); /* Puntos ligeramente más grandes */
     background-size: 30px 30px;
-    opacity: 0.15;
+    opacity: 0.3; /* Aumentado de 0.15 a 0.3 */
     pointer-events: none;
     z-index: -1;
 }
@@ -105,15 +105,14 @@ a {
     position: fixed;
     width: 100%;
     height: 100%;
-    opacity: 0.08;
+    opacity: 0.15; /* Aumentado de 0.08 a 0.15 */
     pointer-events: none;
     z-index: -1;
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,50 Q25,30 50,50 T100,50' stroke='%23459DBF' stroke-width='1' fill='none'/%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg width='150' height='150' viewBox='0 0 150 150' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,75 Q37.5,50 75,75 T150,75' stroke='%239BB8CB' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,50 Q25,30 50,50 T100,50' stroke='%23459DBF' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg width='150' height='150' viewBox='0 0 150 150' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,75 Q37.5,50 75,75 T150,75' stroke='%239BB8CB' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
     background-size: 150px 150px, 200px 200px;
     background-position: 0 0, 75px 75px;
     background-repeat: repeat;
 }
-
 /* =========================
    HEADER - SOLUCIÓN DEFINITIVA
 ========================= */
@@ -1271,11 +1270,14 @@ p.lead {
     font-weight: 800;
 }
 
+/* --- AÑADE ESTA REGLA --- */
 .agendar-cita h2 {
-    font-size: clamp(1.4rem,1.5vw,1.6rem);
-    margin-bottom: 1em;
+    /* 1. Usa un azul más fuerte y saturado de tu paleta para crear contraste. */
+    color: var(--color-primary);
+    /* 2. Aumenta el grosor de la fuente para que se vea más segura y menos opaca. */
     font-weight: 700;
-    color: var(--color-accent);
+    /* 3. Añade una sombra sutil para "levantar" el texto del fondo y darle profundidad. */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 .agendar-cita .intro {
@@ -1284,6 +1286,8 @@ p.lead {
     line-height: 1.7;
     font-size: clamp(1.4rem,1.5vw,1.6rem);
 }
+
+/* ... el resto del código de la sección sigue igual ... */
 
 .promo-box {
     background: rgba(255,255,255,0.8);

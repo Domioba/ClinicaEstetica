@@ -1029,19 +1029,20 @@
 <section id="agendar-cita" class="agendar-cita">
     <div class="agendar-cita-container">
         <h1 class="fade-in">Agendar cita</h1>
-        <h2 class="fade-in">Estás a un paso de agendar tu cita en nuestro SPA con las mejores promociones</h2>
+        <h2 class="fade-in">Estás a un paso de agendar tu cita en nuestra Clinica con la atención especializada que mereces</h2>
         <p class="intro fade-in">
             Solo debes presionar el siguiente botón para iniciar tu transformación hacia una versión más radiante y segura de ti misma.
         </p>
 
         <div class="promo-box fade-in">
             <div class="promo-content">
-                <h3 class="promo-title">🌟 ¡Promociones Exclusivas por Tiempo Limitado! 🌟</h3>
-                <p class="promo-description">
-                    Agenda tu cita hoy y obtén un <strong>20% de descuento</strong> en tu primer tratamiento. 
-                    Además, recibe una <strong>consulta dermatológica gratuita</strong> con la compra de cualquier paquete de servicios.
-                </p>
-                
+                <h3 class="promo-title">🩺 ¡Cuidado Profesional Pensado para Ti! 🩺 </h3>
+               <p class="promo-description">
+    ✨ Agenda tu cita hoy y disfruta de una <strong>atención especializada</strong> en tu primer tratamiento.
+    Además,  <strong>evaluaremos tu piel de forma profesional </strong> para recomendarte el mejor tratamiento.
+</p>
+
+
                 <a href="https://wa.me/50584888868?text=Hola%2C%20deseo%20agendar%20una%20cita%20y%20conocer%20las%20promociones%20disponibles" class="whatsapp-cita-button" target="_blank">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-cita-icon">
                     Agendar cita por WhatsApp
